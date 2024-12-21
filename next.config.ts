@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["nixlabs.dev"],
   },
+  distDir: "dist",
 };
 
 export default nextConfig;
