@@ -1,4 +1,5 @@
 import ProductOffering from "@/components/ProductOffering";
+import { ManagedServices } from "@/lib/prices";
 
 import Image from "next/image";
 
@@ -63,74 +64,7 @@ export default function Home() {
       </div>
 
       {/* <Break /> */}
-      <ProductOffering
-        service={{
-          name: "Managed Offerings",
-          description:
-            "Fully managed services so you can stop worrying and get going.",
-          services: [
-            {
-              name: "Managed O365",
-              description:
-                "Fully managed O365 so good you'd think were microsoft support",
-              features: [
-                "Tennant setup",
-                "Support and Maintenance",
-                "ADDS, AzureAD, and Intune",
-              ],
-              price: {
-                type: "contactus",
-                value: 60,
-                period: "m",
-              },
-              button: {
-                visible: false,
-                label: "Contact Us",
-                action: "#",
-              },
-            },
-            {
-              name: "Managed Websites",
-              description: "Your presence online, like slicing bread",
-              features: [
-                "Domain Configuration",
-                "Highly-available web servers",
-                "Multi-gigabit network",
-              ],
-              price: {
-                type: "contactus",
-                value: 40,
-                period: "m",
-              },
-              button: {
-                visible: false,
-                label: "Contact Us",
-                action: "#",
-              },
-            },
-            {
-              name: "Backup / Revocery",
-              description:
-                "Had a failure? Lost some data? We'll make it like it never even happened.",
-              features: [
-                "Offsite backup storage",
-                "Instant availability",
-                "Monitored and Secured",
-              ],
-              price: {
-                type: "contactus",
-                value: 55,
-                period: "m",
-              },
-              button: {
-                visible: false,
-                label: "Contact Us",
-                action: "#",
-              },
-            },
-          ],
-        }}
-      />
+      <ProductOffering service={ManagedServices} />
     </main>
   );
 }
