@@ -42,7 +42,12 @@ export default function PricingCard({
         </h1>
 
         {button.visible == true ? (
-          <Button className="ml-auto">{button.label}</Button>
+          <Button
+            className="ml-auto"
+            disabled={button.action != "" ? false : true}
+          >
+            {button.label}
+          </Button>
         ) : (
           <></>
         )}

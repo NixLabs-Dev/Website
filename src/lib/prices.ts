@@ -21,7 +21,7 @@ export const ManagedServices: ServiceOffering = {
       button: {
         visible: false,
         label: "Contact Us",
-        action: "#",
+        action: "",
       },
     },
     {
@@ -40,7 +40,7 @@ export const ManagedServices: ServiceOffering = {
       button: {
         visible: false,
         label: "Contact Us",
-        action: "#",
+        action: "",
       },
     },
     {
@@ -60,7 +60,7 @@ export const ManagedServices: ServiceOffering = {
       button: {
         visible: false,
         label: "Contact Us",
-        action: "#",
+        action: "",
       },
     },
   ],
@@ -84,7 +84,7 @@ export const VirtualComputeOffering: ServiceOffering = {
       button: {
         visible: true,
         label: "Buy Now",
-        action: "#",
+        action: "",
       },
     },
     {
@@ -100,7 +100,7 @@ export const VirtualComputeOffering: ServiceOffering = {
       button: {
         visible: true,
         label: "Buy Now",
-        action: "#",
+        action: "",
       },
     },
     {
@@ -116,7 +116,7 @@ export const VirtualComputeOffering: ServiceOffering = {
       button: {
         visible: true,
         label: "Buy Now",
-        action: "#",
+        action: "",
       },
     },
   ],
@@ -140,7 +140,7 @@ export const DedicatedOffering: ServiceOffering = {
       button: {
         visible: true,
         label: "Buy Now",
-        action: "#",
+        action: "",
       },
     },
     {
@@ -156,7 +156,7 @@ export const DedicatedOffering: ServiceOffering = {
       button: {
         visible: true,
         label: "Buy Now",
-        action: "#",
+        action: "",
       },
     },
     {
@@ -172,7 +172,7 @@ export const DedicatedOffering: ServiceOffering = {
       button: {
         visible: true,
         label: "Buy Now",
-        action: "#",
+        action: "",
       },
     },
   ],
@@ -201,7 +201,7 @@ export const ColocationOffering: ServiceOffering = {
       button: {
         visible: true,
         label: "Buy Now",
-        action: "#",
+        action: "",
       },
     },
     {
@@ -222,7 +222,7 @@ export const ColocationOffering: ServiceOffering = {
       button: {
         visible: true,
         label: "Buy Now",
-        action: "#",
+        action: "",
       },
     },
     {
@@ -243,7 +243,7 @@ export const ColocationOffering: ServiceOffering = {
       button: {
         visible: true,
         label: "Buy Now",
-        action: "#",
+        action: "",
       },
     },
   ],

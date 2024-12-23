@@ -20,15 +20,15 @@ export default function Footer() {
           </p>
         </div>
         <div className="ml-auto mt-auto flex flex-row text-zinc-400 gap-12">
-          <a href="/legal/terms" className="hover:text-zinc-500">
+          <Link href="/legal/terms" className="hover:text-zinc-500">
             Terms of Service
-          </a>
-          <a href="/company/about" className="hover:text-zinc-500">
+          </Link>
+          <Link href="/company" className="hover:text-zinc-500">
             Our Company
-          </a>
-          <a href="https://lg.nixlabs.dev" className="hover:text-zinc-500">
+          </Link>
+          <Link href="https://lg.nixlabs.dev" className="hover:text-zinc-500">
             Looking Glass
-          </a>
+          </Link>
         </div>
       </div>
     </div>
