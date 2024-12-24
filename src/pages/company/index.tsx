@@ -1,7 +1,7 @@
 import Break from "@/components/Break";
 import PersonCard from "@/components/PersonCard";
 import { SiDiscord, SiGithub, SiBluesky } from "@icons-pack/react-simple-icons";
-import { AtSign } from "lucide-react";
+import { Mail } from "lucide-react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -172,21 +172,21 @@ export default function Home() {
                 href="mailto:noc@nixlabs.dev"
                 className="flex flex-row gap-2 hover:text-gray-300 transition"
               >
-                <AtSign />
+                <Mail />
                 Network Operations Center
               </Link>
               <Link
                 href="mailto:abuse@nixlabs.dev"
                 className="flex flex-row gap-2 hover:text-gray-300 transition"
               >
-                <AtSign />
+                <Mail />
                 Abuse Department
               </Link>
               <Link
                 href="mailto:sales@nixlabs.dev"
                 className="flex flex-row gap-2 hover:text-gray-300 transition"
               >
-                <AtSign />
+                <Mail />
                 Sales
               </Link>
             </div>{" "}
