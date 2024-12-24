@@ -1,5 +1,5 @@
-import ProductOffering from "@/components/ProductOffering";
-import { ManagedServices } from "@/lib/prices";
+// import ProductOffering from "@/components/ProductOffering";
+// import { ManagedServices } from "@/lib/prices";
 import Head from "next/head";
 
 import Image from "next/image";
