@@ -4,26 +4,20 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className="flex flex-row p-4 md:w-3/4 w-screen">
-      <div className="mr-auto">
+    <div className="flex flex-wrap items-center justify-between px-4 py-2 sm:px-6 lg:px-12">
+      <div className="flex-shrink-0">
         <Link href="/">
-          <Image
-            className=""
-            src="/logo.svg"
-            width={30}
-            height={30}
-            alt="logo"
-          />
+          <Image src="/logo.svg" width={30} height={30} alt="logo" />
         </Link>
       </div>
-      <div className="ml-auto flex gap-2">
+      <div className="flex flex-wrap items-center gap-2">
         <Button variant={"ghost"} asChild>
           <Link href="/hosting">Server Hosting</Link>
         </Button>
         <Button variant={"ghost"} asChild>
           <Link href="/managed">Managed IT</Link>
         </Button>
-        <Button className="hidden md:block" variant={"ghost"} asChild>
+        <Button variant={"ghost"} asChild>
           <Link href="/carrier">Carrier Services</Link>
         </Button>
       </div>

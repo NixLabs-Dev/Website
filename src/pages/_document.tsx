@@ -9,14 +9,18 @@ export default function Document() {
         <link rel="icon" href="/logo.svg" sizes="any" />
       </Head>
       <body
-        className={`bg-gradient-to-br from-[#050505] to-[#0f0f0f] antialiased w-screen overflow-x-hidden min-h-screen flex flex-col items-center p-4 transition`}
+        className={`p-12 bg-gradient-to-br from-[#050505] to-[#0f0f0f] min-h-screen antialiased w-screen overflow-x-hidden flex flex-col items-center transition`}
       >
-        <NavBar />
-        <div className="md:w-4/6 md:pt-24">
+        {/* <NavBar /> */}
+
+        <div className="md:w-4/6 md:pt-24 ">
+          <NavBar />
+          <div className="h-12 md:block" />
           <Main />
+          <Footer />
         </div>
 
-        <Footer />
+        {/* <Footer /> */}
         <NextScript />
       </body>
     </Html>
