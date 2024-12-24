@@ -104,13 +104,13 @@ export default function Home() {
             />
             <PersonCard
               name="Logan Shaw"
-              title="Software Engineer"
+              title="Development Consultant"
               photoURL="/team/logan.jpg"
               links={["https://github.com/TheModdedChicken"]}
             />
             <PersonCard
               name="Emma Knijn"
-              title="Software Engineer"
+              title="Infrastructure Consultant"
               photoURL="/team/emma2.png"
               links={["https://github.com/EmmaKnijn", "https://knijn.one/"]}
             />
