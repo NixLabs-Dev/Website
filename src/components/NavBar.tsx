@@ -24,7 +24,7 @@ export default function NavBar() {
           <Link href="/managed">Managed IT</Link>
         </Button>
         <Button className="hidden md:block" variant={"ghost"} asChild>
-          <Link href="/company">Our Company</Link>
+          <Link href="/carrier">Carrier Services</Link>
         </Button>
       </div>
     </div>

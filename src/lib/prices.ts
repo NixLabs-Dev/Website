@@ -44,7 +44,7 @@ export const ManagedServices: ServiceOffering = {
       },
     },
     {
-      name: "Backup / Revocery",
+      name: "Backup / Recovery",
       description:
         "Had a failure? Lost some data? We'll make it like it never even happened.",
       features: [

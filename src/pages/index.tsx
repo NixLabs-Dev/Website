@@ -30,8 +30,8 @@ export default function Home() {
         />
       </Head>
       <main className="flex flex-col">
-        <div id="heading" className="lg:grid lg:grid-cols-3 gap-12 my-24">
-          <div className="col-span-2">
+        <div id="heading" className="lg:grid lg:grid-cols-5 gap-12 my-24">
+          <div className="col-span-3">
             <h1 className="font-bold w-3/4 text-4xl lg:text-5xl ">
               <span className="bg-gradient-to-br from-violet-400 to-violet-500 inline-block text-transparent bg-clip-text font-bold">
                 Infrastructure
@@ -50,7 +50,7 @@ export default function Home() {
               Making sure we can hold up your project from zero to hero.
             </h3>
           </div>
-          <div className="ml-auto col-span-1">
+          <div className="ml-auto col-span-2">
             <Image
               width={250}
               height={500}

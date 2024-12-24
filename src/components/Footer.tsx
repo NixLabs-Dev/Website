@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div
-      className="navbar pb-8 mt-auto pt-24 w-screen hidden lg:block flex flex-row"
+      className="navbar pb-8 mt-auto pt-24 w-screen lg:block flex flex-row"
       id="Navbar"
     >
       <div className="mx-16 my-2 flex flex-row">
@@ -20,14 +20,14 @@ export default function Footer() {
           </p>
         </div>
         <div className="ml-auto mt-auto flex flex-row text-zinc-400 gap-12">
+          <Link href="/legal/privacy" className="hover:text-zinc-500">
+            Privacy Policy
+          </Link>
           <Link href="/legal/terms" className="hover:text-zinc-500">
             Terms of Service
           </Link>
           <Link href="/company" className="hover:text-zinc-500">
             Our Company
-          </Link>
-          <Link href="https://lg.nixlabs.dev" className="hover:text-zinc-500">
-            Looking Glass
           </Link>
         </div>
       </div>

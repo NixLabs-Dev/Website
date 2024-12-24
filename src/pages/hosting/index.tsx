@@ -26,8 +26,8 @@ export default function Home() {
         />
       </Head>
       <main className="flex flex-col gap-12">
-        <div id="heading" className="lg:grid lg:grid-cols-3 gap-12">
-          <div className="col-span-2">
+        <div id="heading" className="lg:grid lg:grid-cols-5 gap-12">
+          <div className="col-span-3">
             <h1 className="text-5xl font-bold w-3/4">
               <span className="bg-gradient-to-br from-violet-400 to-violet-500 inline-block text-transparent bg-clip-text font-bold">
                 Services
@@ -46,7 +46,7 @@ export default function Home() {
               Making sure we can hold up your project from zero to hero.
             </h3>
           </div>
-          <div className="hidden lg:block gap-12 col-span-1">
+          <div className="hidden lg:block gap-12 col-span-2">
             <Image
               width={500}
               height={500}
