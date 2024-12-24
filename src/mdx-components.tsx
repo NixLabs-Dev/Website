@@ -25,9 +25,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ul: (props: React.HTMLProps<HTMLUListElement>) => (
       <ul className="list-disc list-inside pl-5 mb-4" {...props} />
     ),
-    ol: (props: React.HTMLProps<HTMLOListElement>) => (
-      <ol className="list-decimal list-inside pl-5 mb-4" {...props} />
-    ),
+    // ol: (props: React.HTMLProps<HTMLOListElement>) => (
+    //   <ol className="list-decimal list-inside pl-5 mb-4" {...props} />
+    // ),
     li: (props: React.HTMLProps<HTMLLIElement>) => (
       <li className="mb-1 text-gray-300" {...props} />
     ),
