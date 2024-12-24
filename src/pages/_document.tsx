@@ -13,7 +13,7 @@ export default function Document() {
       >
         {/* <NavBar /> */}
 
-        <div className="md:w-4/6 md:pt-24 ">
+        <div className="md:w-4/6 ">
           <NavBar />
           <div className="h-12 md:block" />
           <Main />
