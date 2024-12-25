@@ -67,6 +67,7 @@ export default function Network() {
                 Connected World
               </span>
             </h1>
+
             <h3 className="mt-3 text-xl text-zinc-300">
               Our multi-carrier network, supported by providers like Lumen,
               Accelecom, and Windstream, offers unmatched reliability. With
@@ -82,6 +83,9 @@ export default function Network() {
               width={600}
               height={400}
             />
+            <div className=" flex flex-row justify-center w-full p-4">
+              <div id="pulsetic-badge"></div>
+            </div>
           </div>
         </div>
         {/* Partner Logos */}
@@ -111,7 +115,7 @@ export default function Network() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="p-6 rounded-xl bg-purple-800 hover:bg-zinc-700 transition text-center shadow-lg"
+                className="p-6 rounded-xl bg-purple-800 hover:bg-zinc-700 transition text-center shadow-lg cursor-pointer"
               >
                 <Image
                   src={service.icon}
@@ -129,6 +133,20 @@ export default function Network() {
         {/* Network Features */}
         <NetworkFAQ /> {/* The FAQ section */}
       </main>
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.onload = function() {
+              Pulsetic.init({
+                monitor_id: 69735,
+                element_id: "pulsetic-badge"
+              });
+            }
+          `,
+        }}
+      />
+      <script src="https://cdn.pulsetic.com/index.js" async />
     </>
   );
 }
