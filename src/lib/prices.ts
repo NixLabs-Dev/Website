@@ -11,7 +11,7 @@ export const ManagedServices: ServiceOffering = {
       features: [
         "Tennant setup",
         "Support and Maintenance",
-        "ADDS, AzureAD, and Intune",
+        "Active Directory and Intune",
       ],
       price: {
         type: "contactus",
@@ -29,7 +29,7 @@ export const ManagedServices: ServiceOffering = {
       description: "Your presence online, like slicing bread",
       features: [
         "Domain Configuration",
-        "Highly-available web servers",
+        "Highly-available servers",
         "Multi-gigabit network",
       ],
       price: {

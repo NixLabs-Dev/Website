@@ -17,7 +17,7 @@ export default function PricingCard({
   button,
 }: Service) {
   return (
-    <Card className="bg-gradient-to-br from-purple-600 to-purple-700 text-white border-purple-800">
+    <Card className="border border-neutral-800 hover:border-purple-800 text-white">
       <CardHeader>
         <CardTitle>
           <h1 className="text-2xl">{name}</h1>

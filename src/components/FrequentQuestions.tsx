@@ -1,30 +1,13 @@
 import { useState } from "react";
 import Head from "next/head";
 
-const faqItems = [
-  {
-    question: "Why is multi-homed connectivity important?",
-    answer:
-      "Multi-homed connectivity ensures that our network remains operational even if one provider experiences an issue. It provides redundancy and better performance.",
-  },
-  {
-    question: "What is dual-stack support?",
-    answer:
-      "Dual-stack support means our network supports both IPv4 and IPv6 protocols, ensuring compatibility and readiness for the future of internet addressing.",
-  },
-  {
-    question: "What does 99.9% uptime guarantee mean?",
-    answer:
-      "Our uptime guarantee means we promise our network will be operational 99.9% of the time, backed by financial credits in case of downtime for some customers.",
-  },
-  {
-    question: "How does optimized BGP routing help me?",
-    answer:
-      "Optimized BGP routing ensures the lowest-latency paths are used for your traffic, improving the speed and reliability of your applications.",
-  },
-];
+type FrequentQuestionsProps = {
+  questions: { question: string; answer: string }[];
+};
 
-export default function NetworkFAQ() {
+export default function FrequentQuestions({
+  questions,
+}: FrequentQuestionsProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -50,13 +33,13 @@ export default function NetworkFAQ() {
         {/* FAQ Section */}
         <section>
           <h2 className="text-4xl font-bold text-center mb-8">
-            Why Choose Our Network?
+            Frequently Asked Questions?
           </h2>
-          <div className="bg-zinc-800 p-6 rounded-lg shadow-md">
-            {faqItems.map((item, index) => (
+          <div className="border border-neutral-800 p-6 rounded-lg shadow-md">
+            {questions.map((item, index) => (
               <div
                 key={index}
-                className="border-b border-zinc-700 last:border-b-0"
+                className="border-b border-neutral-700 last:border-b-0"
               >
                 <button
                   onClick={() => toggleFAQ(index)}

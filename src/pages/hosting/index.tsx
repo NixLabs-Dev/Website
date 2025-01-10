@@ -1,13 +1,69 @@
 import Break from "@/components/Break";
-import ProductOffering from "@/components/ProductOffering";
-import {
-  ColocationOffering,
-  DedicatedOffering,
-  VirtualComputeOffering,
-} from "@/lib/prices";
+import CloudInstanceSelector from "@/components/CloudSelector";
+import FeatureCard from "@/components/featureCard/FeatureItem";
+import { Cloud, Heart, Server, Wifi } from "lucide-react";
 import Head from "next/head";
 
 import Image from "next/image";
+
+const regions = [
+  {
+    id: "hopky",
+    name: "Hopkinsville, KY",
+    flag: "🇺🇸",
+    isAvailable: true,
+    packages: [
+      {
+        name: "Small",
+        vCPUCores: 2,
+        memory: "4GB RAM",
+        storage: "32GB NVMe SSD",
+        bandwidth: "2TB Bandwidth",
+        deploymentTime: "Instant",
+        price: "$5/month",
+        soldOut: false,
+      },
+      {
+        name: "Medium",
+        vCPUCores: 4,
+        memory: "8GB RAM",
+        storage: "64GB NVMe SSD",
+        bandwidth: "4TB Bandwidth",
+        deploymentTime: "Instant",
+        price: "$9/month",
+        soldOut: false,
+      },
+      {
+        name: "Large",
+        vCPUCores: 8,
+        memory: "16GB RAM",
+        storage: "64GB NVMe SSD",
+        bandwidth: "8TB Bandwidth",
+        deploymentTime: "Instant",
+        price: "$17/month",
+        soldOut: false,
+      },
+    ],
+  },
+  {
+    id: "amsnl",
+    name: "Amsterdam, NL",
+    flag: "🇳🇱",
+    isAvailable: true,
+    packages: [
+      {
+        name: "Router VPS",
+        vCPUCores: 2,
+        memory: "2GB RAM",
+        storage: "16GB NVMe SSD",
+        bandwidth: "2TB Bandwidth",
+        deploymentTime: "Instant",
+        price: "$8/month",
+        soldOut: true,
+      },
+    ],
+  },
+];
 
 export default function Home() {
   return (
@@ -25,7 +81,7 @@ export default function Home() {
           key="title"
         />
       </Head>
-      <main className="flex flex-col gap-12 px-4 sm:px-8 lg:px-16 py-8">
+      <main className="flex flex-col px-4 gap-12 sm:px-8 lg:px-16 py-8">
         {/* Heading Section */}
         <div
           id="heading"
@@ -66,12 +122,33 @@ export default function Home() {
         </div>
 
         {/* Product Offerings */}
-        <Break />
-        <ProductOffering service={VirtualComputeOffering} />
-        <Break />
-        <ProductOffering service={DedicatedOffering} />
-        <Break />
-        <ProductOffering service={ColocationOffering} />
+        {/* <Break gap={2} /> */}
+        {/* <h1 className="text-3xl font-bold mb-2">Pricing Calculator</h1> */}
+        <CloudInstanceSelector regions={regions} />
+
+        <Break text="What makes us different" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <FeatureCard
+            icon={Server}
+            title="Owned Infrastructure"
+            description="We own all of our hardware across all regions, allowing us to deliver high performance at an affordable price."
+          />
+          <FeatureCard
+            icon={Cloud}
+            title="All NVMe Storage"
+            description="Almost all of our servers contain lightning fast solid state storage, resulting in low latency access times to your data."
+          />
+          <FeatureCard
+            icon={Wifi}
+            title="Network"
+            description="We offer 40gbit network in most of our locations, a massive upgrade from what is typically standard."
+          />
+          <FeatureCard
+            icon={Heart}
+            title="Reliable"
+            description="We use enterprise gear and redundant systems to ensure reliability with all of our customer services."
+          />
+        </div>
       </main>
     </>
   );

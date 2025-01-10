@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en" className="dark">
       <Head>
         <link rel="icon" href="/logo.svg" sizes="any" />
       </Head>
@@ -13,7 +13,7 @@ export default function Document() {
       >
         {/* <NavBar /> */}
 
-        <div className="md:w-4/6 ">
+        <div className="md:w-5/6 ">
           <NavBar />
           <div className="h-12 md:block" />
           <Main />

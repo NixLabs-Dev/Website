@@ -1,12 +1,8 @@
-import NetworkFAQ from "@/components/NetworkFAQ";
+import FeatureCard from "@/components/featureCard/FeatureItem";
+import FrequentQuestions from "@/components/FrequentQuestions";
+import { CloudLightning, Lock } from "lucide-react";
 import Head from "next/head";
 import Image from "next/image";
-
-const logos = [
-  { name: "Arista Networks", url: "/logos/arista.svg" },
-  { name: "Vyatta", url: "/logos/vyatta.png" },
-  { name: "Juniper", url: "/logos/juniper.png" },
-];
 
 const services = [
   {
@@ -89,7 +85,7 @@ export default function Network() {
           </div>
         </div>
         {/* Partner Logos */}
-        <div className="flex flex-col my-12">
+        {/* <div className="flex flex-col my-12">
           <h2 className="text-3xl font-bold text-center mb-6">
             Our Trusted Partners
           </h2>
@@ -105,7 +101,7 @@ export default function Network() {
               />
             ))}
           </div>
-        </div>
+        </div> */}
         {/* Carrier Services */}
         <section className="my-12">
           <h2 className="text-4xl font-bold text-center mb-8">
@@ -115,7 +111,7 @@ export default function Network() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="p-6 rounded-xl bg-purple-800 hover:bg-zinc-700 transition text-center shadow-lg cursor-pointer"
+                className="p-6 rounded-xl border border-neutral-800 hover:border-purple-900 transition text-center shadow-lg cursor-pointer"
               >
                 <Image
                   src={service.icon}
@@ -131,7 +127,43 @@ export default function Network() {
           </div>
         </section>
         {/* Network Features */}
-        <NetworkFAQ /> {/* The FAQ section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <FeatureCard
+            icon={Lock}
+            title="Security"
+            description="Every router and switch in-between you and our upstreams employ the top AES security standards to ensure no sniffing"
+          />
+          <FeatureCard
+            icon={CloudLightning}
+            title="Speed"
+            description="Our network is designed from the ground up for the best speed for our customers, ensuring your packets get delivered on time."
+          />
+        </div>
+        {/* The FAQ section */}
+        <FrequentQuestions
+          questions={[
+            {
+              question: "Why is multi-homed connectivity important?",
+              answer:
+                "Multi-homed connectivity ensures that our network remains operational even if one provider experiences an issue. It provides redundancy and better performance.",
+            },
+            {
+              question: "What is dual-stack support?",
+              answer:
+                "Dual-stack support means our network supports both IPv4 and IPv6 protocols, ensuring compatibility and readiness for the future of internet addressing.",
+            },
+            {
+              question: "What does 99.9% uptime guarantee mean?",
+              answer:
+                "Our uptime guarantee means we promise our network will be operational 99.9% of the time, backed by financial credits in case of downtime for some customers.",
+            },
+            {
+              question: "How does optimized BGP routing help me?",
+              answer:
+                "Optimized BGP routing ensures the lowest-latency paths are used for your traffic, improving the speed and reliability of your applications.",
+            },
+          ]}
+        />
       </main>
 
       <script
