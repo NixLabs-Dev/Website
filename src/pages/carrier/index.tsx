@@ -79,9 +79,6 @@ export default function Network() {
               width={600}
               height={400}
             />
-            <div className=" flex flex-row justify-center w-full p-4">
-              <div id="pulsetic-badge"></div>
-            </div>
           </div>
         </div>
         {/* Partner Logos */}
@@ -111,7 +108,7 @@ export default function Network() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="p-6 rounded-xl border border-neutral-800 hover:border-purple-900 transition text-center shadow-lg cursor-pointer"
+                className="p-6 rounded-xl border border-neutral-700 hover:border-purple-700 transition text-center shadow-lg cursor-pointer"
               >
                 <Image
                   src={service.icon}
@@ -165,20 +162,6 @@ export default function Network() {
           ]}
         />
       </main>
-
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.onload = function() {
-              Pulsetic.init({
-                monitor_id: 69735,
-                element_id: "pulsetic-badge"
-              });
-            }
-          `,
-        }}
-      />
-      <script src="https://cdn.pulsetic.com/index.js" async />
     </>
   );
 }

@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className="flex flex-wrap items-center justify-between px-4 py-2 sm:px-6 lg:px-12">
-      <div className="flex-shrink-0">
+    <div className="flex flex-row gap-12 items-center justify-between px-4 py-2 sm:px-6 lg:px-12">
+      <div className="flex-shrink-0 hidden md:block">
         <Link href="/">
           <Image src="/logo.svg" width={30} height={30} alt="logo" />
         </Link>

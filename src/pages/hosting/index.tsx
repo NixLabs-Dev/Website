@@ -135,17 +135,17 @@ export default function Home() {
           />
           <FeatureCard
             icon={Cloud}
-            title="All NVMe Storage"
+            title="All SSD Storage"
             description="Almost all of our servers contain lightning fast solid state storage, resulting in low latency access times to your data."
           />
           <FeatureCard
             icon={Wifi}
-            title="Network"
+            title="Redundant Network"
             description="We offer 40gbit network in most of our locations, a massive upgrade from what is typically standard."
           />
           <FeatureCard
             icon={Heart}
-            title="Reliable"
+            title="Reliable Service"
             description="We use enterprise gear and redundant systems to ensure reliability with all of our customer services."
           />
         </div>

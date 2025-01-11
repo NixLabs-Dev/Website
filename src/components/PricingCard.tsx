@@ -17,7 +17,7 @@ export default function PricingCard({
   button,
 }: Service) {
   return (
-    <Card className="border border-neutral-800 hover:border-purple-800 text-white">
+    <Card className="border border-neutral-800 hover:border-purple-800 text-white cursor-pointer">
       <CardHeader>
         <CardTitle>
           <h1 className="text-2xl">{name}</h1>
