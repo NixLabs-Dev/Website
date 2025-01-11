@@ -4,12 +4,12 @@ import Footer from "@/components/Footer";
 
 export default function Document() {
   return (
-    <Html lang="en" className="dark">
+    <Html lang="en" className="dark" style={{ colorScheme: "dark" }}>
       <Head>
         <link rel="icon" href="/logo.svg" sizes="any" />
       </Head>
       <body
-        className={`p-12 bg-gradient-to-br from-[#050505] to-[#0f0f0f] min-h-screen antialiased w-screen overflow-x-hidden flex flex-col items-center transition`}
+        className={`p-12 bg-gradient-to-br from-[#050505] to-[#0f0f0f] min-h-screen antialiased w-screen overflow-x-hidden flex flex-col items-center transition text-white`}
       >
         {/* <NavBar /> */}
 
